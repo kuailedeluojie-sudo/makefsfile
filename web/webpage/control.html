@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8" />
+<style type="text/css">
+.ra:link,.ra:visited,.ta:link,.ta:visited{display:block;width:120px;font-weight:bold;color:#FFFFFF;background-color:#bebebe;text-align:center;padding:4px;text-decoration:none;text-transform:uppercase;
+}
+.ra:hover,.ra:active,.ta:hover,.ta:active{background-color:#cc0000;}
+.ra,.ta{font-size: 20px;font-family: '宋体';
+}
+.header{text-align: center;border-bottom: 1px;margin-bottom: 5px;}
+.topNavBar{border-bottom: 1px solid #ccc;margin-bottom: 5px;text-align: center;}
+.NavBarul{text-align: center;list-style-type:none;margin:10px;padding:0;overflow:hidden;}
+.topNavBarli{float:left;border-radius: 50%;}
+</style>
+<script text="javascript">
+function logout(){
+    window.localStorage.removeItem("bypass");
+    window.parent.location.href="/login.html";
+}
+</script>
+</head>
+<body id="body">
+    <div class="header"><h2>BYPASS</h2></div><div class="topNavBar">
+        <ul class="NavBarul">
+        <li class="topNavBarli"><a class="ta" href="./dev/device0.html" target="middle">设置</a></li>
+        <li class="topNavBarli"><a class="ta" href="./dev/linkctr0.html" target="middle">链路控制</a></li>
+        <li class="topNavBarli"><a class="ta" href="about.html" target="middle">关于</a></li>
+        <li class="topNavBarli"><a class="ta" href="#" onclick="logout()">退出登录</a></li>
+        </ul>
+    </div>
+</body>
+</html>
